@@ -2,9 +2,13 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PortHeader } from '../components/header/port-header';
 import { UserCard } from '../components/user/user';
+import { TechLists } from '../components/tech-skills/tech-skills';
+import { Projects } from '../components/projects/projects';
+import { QuickNav } from '../components/navigation/navigation';
+import { About } from '../components/about/about';
 
 @Component({
-  imports: [RouterOutlet, PortHeader, UserCard],
+  imports: [RouterOutlet, PortHeader, UserCard, TechLists, Projects, QuickNav, About],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
